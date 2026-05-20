@@ -1,0 +1,150 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Hand } from 'lucide-react';
+---
+
+<Layout>
+  <main class="min-h-screen flex bg-white font-['Poppins',sans-serif]">
+    <!-- Left Section -->
+    <div class="hidden lg:flex w-[55%] relative overflow-hidden flex-col justify-between p-16 text-white bg-[#2838C7]">
+      
+      <!-- Noise Texture -->
+      <div class="absolute inset-0 z-0 opacity-[0.15] mix-blend-overlay pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+      
+      <!-- Decorative Lines -->
+      <div class="absolute inset-0 z-0 opacity-30 pointer-events-none">
+        <svg class="w-full h-full" viewBox="0 0 800 800" fill="none" stroke="white" stroke-width="1.5">
+          <path d="M-100,-100 L400,200 C500,260 550,400 500,600 L400,900" />
+          <path d="M-100,-50 L350,250 C450,310 500,450 450,650 L350,950" />
+          <path d="M-100,0 L300,300 C400,360 450,500 400,700 L300,1000" />
+          <path d="M-100,50 L250,350 C350,410 400,550 350,750 L250,1050" />
+          <path d="M-100,100 L200,400 C300,460 350,600 300,800 L200,1100" />
+          
+          <path d="M-100,200 L400,-100" stroke-width="1" opacity="0.5"/>
+          <path d="M-100,300 L500,-100" stroke-width="1" opacity="0.5"/>
+          <path d="M-100,400 L600,-100" stroke-width="1" opacity="0.5"/>
+        </svg>
+      </div>
+
+      <!-- Top Content -->
+      <div class="z-10 mt-12">
+        <!-- Asterisk Logo -->
+        <div class="mb-14">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-20 h-20">
+            <line x1="12" y1="2" x2="12" y2="22"></line>
+            <line x1="3.34" y1="7" x2="20.66" y2="17"></line>
+            <line x1="3.34" y1="17" x2="20.66" y2="7"></line>
+          </svg>
+        </div>
+        
+        <h1 class="text-[64px] font-bold mb-6 leading-[1.15] tracking-tight">
+          Makanan Layak<br/>Bukan Sekedar Program.
+        </h1>
+        <p class="text-[18px] text-white/90 max-w-[460px] leading-[1.6] font-normal">
+          Laporkan Satuan Pelayanan Pemenuhan Gizi di daerahmu dengan mudah, cepat, dan akurat. Bersama kita wujudkan akses makanan layak untuk anak bangsa.
+        </p>
+      </div>
+
+      <!-- Bottom Content -->
+      <div class="z-10 text-[15px] text-white/60 font-light mb-4 tracking-wide">
+        © 2026 Riza Pahlevi
+      </div>
+    </div>
+
+    <div class="w-full lg:w-[45%] flex flex-col p-10 md:p-16 lg:px-24 py-16 bg-white z-10 relative shadow-[-30px_0_60px_-15px_rgba(0,0,0,0.3)]">
+      
+      <div class="font-bold text-[24px] tracking-tight text-black mb-auto">
+        SaleSkip
+      </div>
+      
+      <div class="w-full max-w-[420px] mb-auto mt-24">
+        <h2 class="text-[36px] font-bold text-black mb-2 tracking-tight">Welcome Back!</h2>
+        <p class="text-[#6B7280] mb-10 text-[15px] leading-relaxed">
+          Don't have an account? <a href="#" class="text-black font-semibold underline decoration-1 underline-offset-2 hover:text-blue-600 transition-colors">Create a new account now</a>, it's FREE! Takes less than a minute.
+        </p>
+
+    <form class="space-y-6">
+
+      <!-- Email Input -->
+      <div>
+        <label 
+          for="email"
+          class="block text-sm font-medium text-[#1A1A1A] mb-2"
+        >
+          Email
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          class="w-full bg-[#F4F5F7] px-4 pt-4 pb-3 text-[15px] text-black placeholder:text-[#9CA3AF] outline-none transition-colors rounded-lg"
+          required
+        />
+      </div>
+
+      <!-- Password Input -->
+      <div>
+        <label 
+          for="password"
+          class="block text-sm font-medium text-[#1A1A1A] mb-2"
+        >
+          Password
+        </label>
+
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          class="w-full bg-[#F4F5F7] px-4 pt-4 pb-3 text-[15px] text-black placeholder:text-[#9CA3AF] outline-none transition-colors rounded-lg"
+          required
+        />
+      </div>
+
+      <div class="pt-6">
+        <button
+          type="submit"
+          class="w-full bg-[#1A1A1A] hover:bg-black text-white font-medium py-[15px] rounded-md transition-colors text-[15px]"
+        >
+          Login Now
+        </button>
+      </div>
+
+      <div>
+        <button
+          type="button"
+          class="w-full bg-white border border-[#E5E7EB] text-black hover:bg-gray-50 font-medium py-[15px] rounded-md flex items-center justify-center gap-3 transition-colors text-[15px]"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+          </svg>
+          Login with Google
+        </button>
+      </div>
+
+    </form>
+
+        <div class="mt-8 text-center text-[14px]">
+          <span class="text-[#9CA3AF]">Forget password</span> <a href="#" class="text-black font-semibold underline decoration-1 underline-offset-2 hover:text-blue-600 transition-colors ml-1">Click here</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(10deg); }
+  }
+  .animate-wave {
+    animation: wave 2.5s infinite;
+  }
+</style>

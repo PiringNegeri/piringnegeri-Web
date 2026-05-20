@@ -1,0 +1,37 @@
+---
+import { Puzzle, Users, Settings2 } from "lucide-react";
+
+const features = [
+  {
+    title: "Buat Laporan, Mudah!",
+    description: "Pantau dan Laporkan Program Makan Bergizi Gratis dari Badan Gizi Nasional untuk memaksimalkan seluruh 6767 Satuan Pelayanan Pemenuhan Gizi di Indonesia",
+    icon: Puzzle,
+  },
+  {
+    title: "Terintegrasi",
+    description: "Pantau dan Laporkan Program Makan Bergizi Gratis dari Badan Gizi Nasional untuk memaksimalkan seluruh 6767 Satuan Pelayanan Pemenuhan Gizi di Indonesia",
+    icon: Users,
+  },
+  {
+    title: "Transparan",
+    description: "Eliminate repetitive tasks. Set up smart rules and let our platform handle the busywork so you can focus on what matters.",
+    icon: Settings2,
+  },
+];
+---
+
+<section class="w-full px-6 lg:px-12 py-16">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 max-w-7xl mx-auto">
+    {features.map((feature) => (
+      <div class="flex flex-col items-start text-left">
+        <div class="mb-4 text-slate-800 flex items-center gap-3">
+          <feature.icon size={28} strokeWidth={1.5} />
+          <h3 class="text-xl font-semibold">{feature.title}</h3>
+        </div>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          {feature.description}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>

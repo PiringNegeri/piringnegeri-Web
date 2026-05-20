@@ -1,0 +1,61 @@
+---
+import { Mail, MapPin, Phone } from "lucide-react";
+---
+
+<footer class="w-full bg-white border-t border-slate-100 pt-16 pb-8 px-6 lg:px-12 mt-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-8 mb-12">
+
+    <div class="md:col-span-1 lg:col-span-2">
+      <div class="flex items-center gap-2 mb-6">
+        <img src="/images/piringnegeri_vector.png" alt="Piring Negeri Icon" class="h-8 w-auto object-contain" />
+        <img src="/images/piringnegeri_text.png" alt="Piring Negeri" class="h-5 w-auto object-contain mt-0.5" />
+      </div>
+      <p class="text-slate-500 text-sm leading-relaxed max-w-xs mb-6">
+        Pantau dan Laporkan Program Makan Bergizi Gratis dari Badan Gizi Nasional untuk masa depan generasi Indonesia yang lebih baik.
+      </p>
+      <div class="flex items-center gap-4 text-slate-400 text-sm font-medium">
+        <a href="#" class="hover:text-[#5885f6] transition-colors no-underline text-black">Instagram</a>
+        <span class="text-slate-200">|</span>
+        <a href="#" class="hover:text-[#5885f6] transition-colors no-underline text-black">X (Twitter)</a>
+        <span class="text-slate-200">|</span>
+        <a href="#" class="hover:text-[#5885f6] transition-colors no-underline text-black">Facebook</a>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="font-semibold text-slate-800 mb-6">Menu Navigasi</h3>
+      <ul class="flex flex-col gap-3 text-sm text-slate-500">
+        <li><a href="#" class="hover:text-[#5885f6] transition-colors no-underline text-black">Beranda</a></li>
+        <li><a href="#" class="hover:text-[#5885f6] transition-colors no-underline text-black">Tentang Kami</a></li>
+        <li><a href="#" class="hover:text-[#5885f6] transition-colors no-underline text-black">Program Gizi</a></li>
+        <li><a href="#" class="hover:text-[#5885f6] transition-colors no-underline text-black">Laporan Publik</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold text-slate-800 mb-6">Hubungi Kami</h3>
+      <ul class="flex flex-col gap-4 text-sm text-slate-500">
+        <li class="flex items-start gap-3">
+          <MapPin size={18} className="text-[#5885f6] shrink-0 mt-0.5" />
+          <span>Kantor Badan Gizi Nasional<br/>Jl. Medan Merdeka Barat No.15<br/>Jakarta Pusat, 10110</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <Mail size={18} className="text-[#5885f6] shrink-0" />
+          <a href="mailto:halo@piringnegeri.id" class="hover:text-[#5885f6] transition-colors text-slate-500">halo@piringnegeri.id</a>
+        </li>
+        <li class="flex items-center gap-3">
+          <Phone size={18} className="text-[#5885f6] shrink-0" />
+          <span>(021) 1500-123</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto border-t border-slate-100 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+    <p>&copy; {new Date().getFullYear()} Piring Negeri. Hak cipta dilindungi undang-undang.</p>
+    <div class="flex items-center gap-6">
+      <a href="#" class="hover:text-[#5885f6] transition-colors text-slate-500">Kebijakan Privasi</a>
+      <a href="#" class="hover:text-[#5885f6] transition-colors text-slate-500">Syarat & Ketentuan</a>
+    </div>
+  </div>
+</footer>

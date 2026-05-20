@@ -1,0 +1,46 @@
+---
+import { ChevronDown } from "lucide-react";
+---
+
+<div class="flex flex-col w-full max-w-md mx-auto lg:mx-0 lg:ml-auto">
+  <h2 class="text-3xl font-semibold text-slate-800 mb-8">Let's talk</h2>
+  
+  <form class="flex flex-col gap-4">
+    <div class="relative">
+      <select class="w-full appearance-none bg-white border border-slate-200 text-slate-600 text-sm py-4 px-6 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent cursor-pointer shadow-sm">
+        <option value="" disabled selected hidden>Chose your plan</option>
+        <option value="basic">Basic Plan</option>
+        <option value="pro">Pro Plan</option>
+      </select>
+      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-6 text-slate-400">
+        <ChevronDown size={18} />
+      </div>
+    </div>
+
+    <div class="relative">
+      <select class="w-full appearance-none bg-white border border-slate-200 text-slate-600 text-sm py-4 px-6 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent cursor-pointer shadow-sm">
+        <option value="" disabled selected hidden>Choose your team size</option>
+        <option value="1-5">1 - 5 members</option>
+        <option value="6-20">6 - 20 members</option>
+      </select>
+      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-6 text-slate-400">
+        <ChevronDown size={18} />
+      </div>
+    </div>
+
+    <div class="relative">
+      <select class="w-full appearance-none bg-white border border-slate-200 text-slate-600 text-sm py-4 px-6 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent cursor-pointer shadow-sm">
+        <option value="" disabled selected hidden>Choose your industry</option>
+        <option value="tech">Technology</option>
+        <option value="design">Design</option>
+      </select>
+      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-6 text-slate-400">
+        <ChevronDown size={18} />
+      </div>
+    </div>
+
+    <button type="submit" class="w-full bg-slate-800 hover:bg-slate-900 text-white text-sm font-medium py-4 px-6 rounded-full mt-2 transition-colors shadow-md">
+      Let's talk to our team
+    </button>
+  </form>
+</div>
